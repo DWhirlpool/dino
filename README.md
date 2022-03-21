@@ -11,6 +11,6 @@ The dino game is extracted from the Chromium [source code](https://cs.chromium.o
 
 ## How to play
 
-You can click [here](https://congerh.github.io/dino/) to play online.
+You can click [here](https://dwhirlpool.github.io/dino/) to play online.
 
 You can also play the origin Chrome dino game without turning off your network connections. Just open `chrome://dino` in your web browser, and you’ll be taken to an "arcade mode" where you can practice in a full-window environment.
