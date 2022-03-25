@@ -21,7 +21,7 @@
    }
    code {
     font-family: Consolas,"courier new";
-    color: cyan;
+    color: crimson;
     background-color: #f1f1f1;
     padding: 2px;
     font-size: 105%;
@@ -47,17 +47,10 @@
               <li>Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>or<kbd>C</kbd> to Inspect, and go to the Console Tab
               <li>To Change Jump Height, paste this in the console, <code>Runner.instance_.tRex.setJumpVelocity(15)</code>, for example</li>
               <li>To Change Dino Running speed, paste this in the console, <code>Runner.instance_.setSpeed(1000)</code>, for example</li>
-              <li>To Make Dino Immortal,
-                first paste this into the console,
-                <pre>
-                <code>
-                var original = Runner.prototype.gameOver
-                </code>
+              <li>To Make Dino Immortal, first paste this into the console,
+                <code>var original = Runner.prototype.gameOver</code>
                 then, this
-                <code>
-                var original = Runner.prototype.gameOver
-                </code>
-                </pre>
+                <code>var original = Runner.prototype.gameOver</code>
               </li>
               <li>To turn it back normal, simply refresh or <kbd>Ctrl</kbd>+<kbd>R</kbd>
               <li>Or, to do it the hard way, paste this in the console, <code>Runner.prototype.gameOver = original</code></li>  
