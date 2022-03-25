@@ -5,6 +5,28 @@
   <title>chrome://dino</title>
   <link rel="stylesheet" href="dino.min.css">
   <script src="dino.min.js"></script>
+  <style>
+    kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+   }
+   code {
+    font-family: Consolas,"courier new";
+    color: cyan;
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 105%;
+   }
+  </style>
 </head>
 <body id="t" style="font-family: 'Segoe UI',Arial,'Microsoft Yahei',sans-serif; font-size: 75%" class="offline">
   <div id="main-frame-error" class="interstitial-wrapper">
@@ -20,6 +42,26 @@
               <li>Press the <b>space bar or up arrow key</b> to jump and to start the game</li>
               <li>Use the <b>down arrow key</b> to duck</li>
             </ul>
+            <p>Hacks</p>
+            <u1>
+              <li>Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>or<kbd>C</kbd> to Inspect, and go to the Console Tab
+              <li>To Change Jump Height, paste this in the console, <code>Runner.instance_.tRex.setJumpVelocity(15)</code>, for example</li>
+              <li>To Change Dino Running speed, paste this in the console, <code>Runner.instance_.setSpeed(1000)</code>, for example</li>
+              <li>To Make Dino Immortal,
+                first paste this into the console,
+                <pre>
+                <code>
+                var original = Runner.prototype.gameOver
+                </code>
+                then, this
+                <code>
+                var original = Runner.prototype.gameOver
+                </code>
+                </pre>
+              </li>
+              <li>To turn it back normal, simply refresh or <kbd>Ctrl</kbd>+<kbd>R</kbd>
+              <li>Or, to do it the hard way, paste this in the console, <code>Runner.prototype.gameOver = original</code></li>  
+            </u1>
           </div>
           <div class="error-code"><a href="https://github.com/dwhirlpool/dino">source code</a> on github</div>
         </div>
